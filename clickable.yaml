@@ -1,0 +1,17 @@
+clickable_minimum_required: 8.7.0
+
+builder: cmake
+kill: ubdmr
+
+# Pinned so every container build is reproducible and clickable does not have
+# to probe the attached device for its architecture.
+restrict_arch: arm64
+framework: ubuntu-sdk-20.04
+
+# QtMultimedia (QAudioInput/QAudioOutput) is not part of the base SDK image.
+dependencies_target:
+  - qtmultimedia5-dev
+  - qtdeclarative5-dev
+
+build_args:
+  - -DCMAKE_BUILD_TYPE=Release

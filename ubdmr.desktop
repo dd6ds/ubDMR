@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=ubDMR
+Comment=BrandMeister DMR client
+Exec=ubdmr %U
+Icon=ubdmr.png
+Terminal=false
+Type=Application
+Categories=Network;HamRadio;
+X-Lomiri-Touch=true

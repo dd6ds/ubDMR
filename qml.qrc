@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="/">
+    <file>qml/main.qml</file>
+    <file>qml/RadioPage.qml</file>
+    <file>qml/LastHeardPage.qml</file>
+    <file>qml/TalkgroupsPage.qml</file>
+    <file>qml/EchoPage.qml</file>
+    <file>qml/ChatPage.qml</file>
+    <file>qml/ChatView.qml</file>
+    <file>qml/MessageStore.qml</file>
+    <file>qml/ContactsPage.qml</file>
+    <file>qml/StationRow.qml</file>
+    <file>qml/SettingsPage.qml</file>
+    <file>qml/ActivityCard.qml</file>
+    <file>qml/PttButton.qml</file>
+    <file>qml/LanguageBox.qml</file>
+    <file>qml/AppLabel.qml</file>
+    <file>qml/AppField.qml</file>
+  </qresource>
+</RCC>

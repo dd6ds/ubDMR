@@ -1,0 +1,17 @@
+{
+  "name": "ubdmr",
+  "title": "ubDMR",
+  "version": "0.1.0",
+  "description": "BrandMeister DMR client for Ubuntu Touch",
+  "maintainer": "Dennis Schneck DD6DS <dennisschneck@web.de>",
+  "architecture": "$ENV{CLICK_ARCH}",
+  "framework": "ubuntu-sdk-20.04",
+  "hooks": {
+    "ubdmr": {
+      "apparmor": "ubdmr.apparmor",
+      "desktop": "ubdmr.desktop"
+    }
+  },
+  "type": "app",
+  "icon": "ubdmr.png"
+}
