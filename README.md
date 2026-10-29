@@ -36,6 +36,10 @@ from a local stand-in server (`tools/screenshots/`), not from the network.
 - *Echo* page: talk to an echo service (BrandMeister parrot 9990 or 262997)
   and hear yourself back. The PTT button shows a shrinking ring and
   the time left before the 3-minute transmit time-out.
+- Microphone level meter and gain (−10 … +30 dB, soft limiter instead of
+  clipping) on the *Echo* page and in *Settings*; *Test microphone* shows the
+  level without transmitting. The radio page shows the meter while
+  transmitting, and every transmission logs its peak and average level.
 - *Chat*: pick a saved contact and write a text message (✓✓ when
   delivered); incoming private and talkgroup messages with an unread counter
   on the tab, answered in their conversation. ✉ on a contact starts one too.

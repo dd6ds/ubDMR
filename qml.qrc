@@ -13,6 +13,8 @@
     <file>qml/SettingsPage.qml</file>
     <file>qml/ActivityCard.qml</file>
     <file>qml/PttButton.qml</file>
+    <file>qml/MicMeter.qml</file>
+    <file>qml/MicGainControl.qml</file>
     <file>qml/LanguageBox.qml</file>
     <file>qml/AppLabel.qml</file>
     <file>qml/AppField.qml</file>

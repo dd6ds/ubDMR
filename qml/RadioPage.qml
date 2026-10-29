@@ -159,5 +159,13 @@ Flickable {
             onPressedDown: Radio.startTransmit(page.txDestination, app.settings.privateMode)
             onReleasedUp: Radio.stopTransmit()
         }
+
+        MicMeter {
+            app: page.app
+            Layout.fillWidth: true
+            Layout.leftMargin: app.gu * 6
+            Layout.rightMargin: app.gu * 6
+            opacity: Radio.transmitting ? 1 : 0
+        }
     }
 }

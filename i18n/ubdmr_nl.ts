@@ -172,6 +172,64 @@
     </message>
   </context>
   <context>
+    <name>MicGainControl</name>
+    <message>
+      <location filename="../qml/MicGainControl.qml" line="31" />
+      <source>Speak as you would on air: the bar should reach green, but not red.</source>
+      <translation>Spreek zoals in de lucht: de balk moet groen halen, maar niet rood.</translation>
+    </message>
+    <message>
+      <location filename="../qml/MicGainControl.qml" line="33" />
+      <source>Too loud: lower the gain.</source>
+      <translation>Te luid: verlaag de versterking.</translation>
+    </message>
+    <message>
+      <location filename="../qml/MicGainControl.qml" line="35" />
+      <source>Good level.</source>
+      <translation>Goed niveau.</translation>
+    </message>
+    <message>
+      <location filename="../qml/MicGainControl.qml" line="37" />
+      <source>Too quiet: raise the gain.</source>
+      <translation>Te zacht: verhoog de versterking.</translation>
+    </message>
+    <message>
+      <location filename="../qml/MicGainControl.qml" line="38" />
+      <source>Hardly any signal: speak, or check the microphone.</source>
+      <translation>Nauwelijks signaal: spreek, of controleer de microfoon.</translation>
+    </message>
+    <message>
+      <location filename="../qml/MicGainControl.qml" line="45" />
+      <source>Microphone gain</source>
+      <translation>Microfoonversterking</translation>
+    </message>
+    <message>
+      <location filename="../qml/MicGainControl.qml" line="156" />
+      <source>quieter</source>
+      <translation>zachter</translation>
+    </message>
+    <message>
+      <location filename="../qml/MicGainControl.qml" line="162" />
+      <source>louder</source>
+      <translation>luider</translation>
+    </message>
+    <message>
+      <location filename="../qml/MicGainControl.qml" line="171" />
+      <source>Level</source>
+      <translation>Niveau</translation>
+    </message>
+    <message>
+      <location filename="../qml/MicGainControl.qml" line="193" />
+      <source>Stop microphone test</source>
+      <translation>Microfoontest stoppen</translation>
+    </message>
+    <message>
+      <location filename="../qml/MicGainControl.qml" line="194" />
+      <source>Test microphone (no transmission)</source>
+      <translation>Microfoon testen (zonder uitzenden)</translation>
+    </message>
+  </context>
+  <context>
     <name>PttButton</name>
     <message>
       <location filename="../qml/PttButton.qml" line="75" />
@@ -187,17 +245,18 @@
   <context>
     <name>RadioController</name>
     <message>
-      <location filename="../src/radiocontroller.cpp" line="87" />
+      <location filename="../src/radiocontroller.cpp" line="97" />
       <source>Server, DMR ID and password are required</source>
       <translation>Server, DMR-ID en wachtwoord zijn nodig</translation>
     </message>
     <message>
-      <location filename="../src/radiocontroller_tx.cpp" line="23" />
+      <location filename="../src/radiocontroller_tx.cpp" line="30" />
       <source>Not ready to transmit</source>
       <translation>Niet klaar om te zenden</translation>
     </message>
     <message>
-      <location filename="../src/radiocontroller_tx.cpp" line="34" />
+      <location filename="../src/radiocontroller_tx.cpp" line="46" />
+      <location filename="../src/radiocontroller_tx.cpp" line="144" />
       <source>Microphone not available</source>
       <translation>Microfoon niet beschikbaar</translation>
     </message>
@@ -386,22 +445,27 @@
       <translation>UDP-poort</translation>
     </message>
     <message>
-      <location filename="../qml/SettingsPage.qml" line="147" />
+      <location filename="../qml/SettingsPage.qml" line="142" />
+      <source>Microphone</source>
+      <translation>Microfoon</translation>
+    </message>
+    <message>
+      <location filename="../qml/SettingsPage.qml" line="153" />
       <source>Connect when the app starts</source>
       <translation>Verbinden bij het starten</translation>
     </message>
     <message>
-      <location filename="../qml/SettingsPage.qml" line="159" />
+      <location filename="../qml/SettingsPage.qml" line="165" />
       <source>Disconnect</source>
       <translation>Verbreken</translation>
     </message>
     <message>
-      <location filename="../qml/SettingsPage.qml" line="159" />
+      <location filename="../qml/SettingsPage.qml" line="165" />
       <source>Connect</source>
       <translation>Verbinden</translation>
     </message>
     <message>
-      <location filename="../qml/SettingsPage.qml" line="175" />
+      <location filename="../qml/SettingsPage.qml" line="181" />
       <source>Transmitting needs a valid amateur radio licence. Ubuntu Touch pauses apps in the background; to keep listening with the screen off, exempt ubDMR from suspension (UT Tweak Tool → Apps &amp; Scopes).</source>
       <translation>Zenden vereist een geldige zendvergunning. Ubuntu Touch pauzeert apps op de achtergrond; om met het scherm uit te blijven luisteren, sluit ubDMR uit van pauzeren (UT Tweak Tool → Apps &amp; Scopes).</translation>
     </message>

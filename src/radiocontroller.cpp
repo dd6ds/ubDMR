@@ -3,6 +3,7 @@
 #include "radiocontroller.h"
 
 #include <QDebug>
+#include <QSettings>
 
 #include <algorithm>
 
@@ -14,6 +15,7 @@ constexpr int kReceiveTimeoutMs = 1500;
 constexpr int kBurstBytes = 3 * AmbeFrame::kFrame72Bytes;
 // IDs above this carry a two-digit hotspot suffix (e.g. 262123401).
 constexpr quint32 kMaxPlainDmrId = 9999999;
+constexpr int kMicTestMs = 60000;
 
 } // namespace
 
@@ -35,6 +37,14 @@ RadioController::RadioController(QObject *parent) : QObject(parent)
     connectVocoder(&m_serverVocoder);
 
     connect(&m_recorder, &AudioRecorder::frameReady, this, &RadioController::onMicFrame);
+    connect(&m_recorder, &AudioRecorder::levelMeasured, this, &RadioController::onMicLevel);
+    m_micGainDb = qBound(kMicGainMinDb,
+                         QSettings().value(QStringLiteral("micGainDb"), 0.0).toDouble(),
+                         kMicGainMaxDb);
+    m_recorder.setGainDb(m_micGainDb);
+    m_micTestTimer.setSingleShot(true);
+    m_micTestTimer.setInterval(kMicTestMs);
+    connect(&m_micTestTimer, &QTimer::timeout, this, &RadioController::stopMicTest);
 
     m_txFlushTimer.setSingleShot(true);
     connect(&m_txFlushTimer, &QTimer::timeout, this, &RadioController::finishTransmit);

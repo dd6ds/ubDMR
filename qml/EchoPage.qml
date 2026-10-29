@@ -65,5 +65,11 @@ Flickable {
             onPressedDown: Radio.startTransmit(page.selected.id, true)
             onReleasedUp: Radio.stopTransmit()
         }
+
+        MicGainControl {
+            app: page.app
+            Layout.fillWidth: true
+            Layout.topMargin: app.spacingUnit
+        }
     }
 }

@@ -139,6 +139,12 @@ Flickable {
             }
         }
 
+        AppLabel { text: qsTr("Microphone"); font.bold: true; font.pixelSize: app.fontTitle }
+        MicGainControl {
+            app: page.app
+            Layout.fillWidth: true
+        }
+
         RowLayout {
             CheckBox {
                 checked: app.settings.autoConnect
